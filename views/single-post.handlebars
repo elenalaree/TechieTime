@@ -1,5 +1,6 @@
 {{> post-info post }}
 {{#if loggedIn}}
+<a href="/"> &larr; Return to posts</a>
 <form class="comment-form">
     <div>
         <textarea name="comment-body"></textarea>
@@ -14,5 +15,4 @@
 {{> comments post.comments}}
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
 {{/if}}
